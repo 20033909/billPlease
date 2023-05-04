@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
                 // Code for the action
 
                 float fr=Float.parseFloat(String.valueOf(amt));
+                textDisplay2.setText("(int) fr)");
 
 
 
@@ -55,18 +56,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        tg_sv.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                // Code for the action
-                boolean isChecked = tg_sv.isChecked();
-                if (isChecked){
-                    amt.setEnabled(true);
-                } else {
-                    amt.setEnabled(false);
-                }
-            }
-        });
+
 
     }
 
