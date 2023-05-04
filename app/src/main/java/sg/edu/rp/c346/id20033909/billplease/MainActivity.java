@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         = findViewById(R.id.editAmt);
-        = findViewById(R.id.textPax);
+        = findViewById(R.id.editPax);
         = findViewById(R.id.toggSv);
         = findViewById(R.id.toggGst);
         = findViewById(R.id.radioGroupGender);
