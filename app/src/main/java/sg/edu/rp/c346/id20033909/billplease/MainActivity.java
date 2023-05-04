@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         rg_payment = findViewById(R.id.rgPayment);
         btn_display = findViewById(R.id.btnDisplay);
         btn_reset = findViewById(R.id.btnReset);
+        textDisplay1 = findViewById(R.id.textTotal);
+        textDisplay2 = findViewById(R.id.textEach);
 
     }
 }
