@@ -2,7 +2,7 @@
     <string name="app_name">Bill Please</string>
     <string name="amount">Amount</string>
     <string name="num_of_Pax">Num of Pax</string>
-    <string name="no_Svs">NO SVS</string>
+    <string name="service">SERVICE</string>
     <string name="gst">GST</string>
     <string name="discount">Discount (%)</string>
     <string name="cash">Cash</string>

@@ -8,26 +8,26 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/rawAmtTitle"
+        android:id="@+id/amt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/amount" />
 
     <EditText
-        android:id="@+id/editRawAmt"
+        android:id="@+id/EditAmt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <TextView
-        android:id="@+id/numOfPaxTitle"
+        android:id="@+id/pax"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/num_of_Pax" />
 
     <EditText
-        android:id="@+id/editNumOfPax"
+        android:id="@+id/textPax"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -39,14 +39,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/noSvsBtn"
+            android:id="@+id/toggSv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/no_Svs" />
+            android:text="@string/service" />
 
         <Button
-            android:id="@+id/gstBtn"
+            android:id="@+id/toggGst"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -60,15 +60,16 @@
         android:text="@string/discount" />
 
     <EditText
-        android:id="@+id/editDiscount"
+        android:id="@+id/textDiscount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="numberDecimal" />
 
     <RadioGroup
+        android:id="@+id/rgPayment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,14 +80,12 @@
                 android:id="@+id/radioCash"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/cash" />
 
             <RadioButton
                 android:id="@+id/radioPayNow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/payNow" />
         </LinearLayout>
     </RadioGroup>
@@ -97,14 +96,14 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/splitBtn"
+            android:id="@+id/btnDisplay"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="@string/split" />
 
         <Button
-            android:id="@+id/resetBtn"
+            android:id="@+id/btnReset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -112,16 +111,14 @@
     </LinearLayout>
 
     <TextView
-        android:id="@+id/totalBillDisplay"
+        android:id="@+id/displayTotal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/totalBill" />
+        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/eachPayDisplay"
+        android:id="@+id/displayEach"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/eachPays" />
+        android:layout_height="wrap_content" />
 
     <TextView
         android:id="@+id/textView5"
