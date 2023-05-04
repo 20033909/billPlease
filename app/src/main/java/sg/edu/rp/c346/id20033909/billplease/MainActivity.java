@@ -45,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Code for the action
+                double enteredAmt = 0;
+
+                if(!tg_sv.isChecked() && !tg_gst.isChecked()){
+                    enteredAmt = Double.parseDouble(amt.getText().toString());
+                } else if (tg_sv.isChecked() && !tg_gst.isChecked()){
+                    enteredAmt = Double.parseDouble(amt.getText().toString()) * 1.1;
+                } else if (!tg_sv.isChecked() && tg_gst.isChecked()){
+                    enteredAmt = Double.parseDouble(amt.getText().toString()) * 1.08;
+                } else {
+                    enteredAmt = Double.parseDouble(amt.getText().toString()) * 1.18;
+                }
 
                 float fr=Float.parseFloat(String.valueOf(amt));
                 textDisplay2.setText("(int) fr)");
