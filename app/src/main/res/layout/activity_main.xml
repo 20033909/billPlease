@@ -14,7 +14,7 @@
         android:text="@string/amount" />
 
     <EditText
-        android:id="@+id/EditAmt"
+        android:id="@+id/editAmt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
