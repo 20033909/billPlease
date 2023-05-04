@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
+
     EditText amt;
     EditText pax;
     ToggleButton tg_sv;
@@ -44,10 +45,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // Code for the action
-                String stringResponse = etInput.getText().toString();
-                tvDisplay.setText(stringResponse);
+
+                float fr=Float.parseFloat(String.valueOf(amt));
 
 
+
+
+
+            }
+        });
+
+        tg_sv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Code for the action
+                boolean isChecked = tg_sv.isChecked();
+                if (isChecked){
+                    amt.setEnabled(true);
+                } else {
+                    amt.setEnabled(false);
+                }
             }
         });
 
