@@ -38,19 +38,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <Button
+        <ToggleButton
             android:id="@+id/toggSv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/service" />
+            android:checked="true"
+            android:textOff="NO SVS"
+            android:textOn="SVS" />
 
-        <Button
+        <ToggleButton
             android:id="@+id/toggGst"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/gst" />
+            android:checked="true"
+            android:textOff="NO GST"
+            android:textOn="GST" />
+
     </LinearLayout>
 
     <TextView

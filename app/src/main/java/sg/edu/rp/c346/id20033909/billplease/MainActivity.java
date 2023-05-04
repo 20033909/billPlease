@@ -3,10 +3,24 @@ package sg.edu.rp.c346.id20033909.billplease;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.RadioGroup;
+import android.widget.TextView;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
-
-
+    EditText amt;
+    EditText pax;
+    ToggleButton tg_sv;
+    ToggleButton tg_gst;
+    EditText discount;
+    RadioGroup rg_payment;
+    Button btn_display;
+    Button btn_reset;
+    TextView textDisplay1;
+    TextView textDisplay2;
 
 
 
@@ -25,5 +39,18 @@ public class MainActivity extends AppCompatActivity {
         textDisplay1 = findViewById(R.id.textTotal);
         textDisplay2 = findViewById(R.id.textEach);
 
+
+        btn_display.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Code for the action
+                String stringResponse = etInput.getText().toString();
+                tvDisplay.setText(stringResponse);
+
+
+            }
+        });
+
     }
+
 }
