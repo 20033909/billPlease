@@ -57,8 +57,9 @@ public class MainActivity extends AppCompatActivity {
                     enteredAmt = Double.parseDouble(amt.getText().toString()) * 1.18;
                 }
 
-                float fr=Float.parseFloat(String.valueOf(amt));
-                textDisplay2.setText("(int) fr)");
+                if(discount.getText().toString().trim().length() != 0){
+                    enteredAmt =
+                }
 
 
 
