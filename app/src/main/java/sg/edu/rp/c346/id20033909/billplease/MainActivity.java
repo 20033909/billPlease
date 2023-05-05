@@ -58,8 +58,24 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(discount.getText().toString().trim().length() != 0){
-                    enteredAmt =
+                    enteredAmt *= 1- Double.parseDouble(discount.getText().toString())/100;
                 }
+
+                textDisplay1.setText("Total Bill: $" + String.format("%.2f", enteredAmt));
+                int  enteredPax = Integer.parseInt(pax.getText().toString());
+                if (enteredPax != 1)
+                    textDisplay2.setText("Each Pays: $" + String.format("%.2f", enteredAmt/enteredPax));
+                else
+                    textDisplay2.setText("Each Pays: $" + enteredAmt);
+
+
+
+
+
+
+
+
+
 
 
 
